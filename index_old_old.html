@@ -1,0 +1,55 @@
+<!-- Kit Chan
+Coding Bootcamp UT-Austin
+Oct 2016
+Assignment week-4-rpg game -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="=utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <!--Simple bootstrap style for easier layout -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>CRYSTALS COLLECTOR!</title>
+</head>
+
+<body>
+    <!-- bootstrap used for grids -->
+    <div class="container">
+        <div class="row">
+            <h1> CRYSTALS COLLECTOR!</h1>
+            <div class="col-sm-6">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                <p>The Value of each crystal is hidden from you until you click on it.</p>
+                <p>Each tie when the game starts, the game will change the values of each crystal.</p>
+                <div class="col-sm-6">
+                    <div id="guessNumber">Random number:</div>
+                    <span id="numberToGuess"></span>
+                </div>
+                <div class="col-sm-4">
+                  <div class="score">You Score is: </div>
+                    <span id="totalScore"></span>
+                </div>
+                <div class="col-sm-12">
+                    <div id="crystals"></div>
+                    <span class="crystalImage"></span>
+                </div>
+                <div class="col-sm-5">
+                    <div class="scorestyle"><span id="statusMsg"></span></div>
+                    <div class="scorestyle">Wins:<span id="wins"></span></div>
+                    <div class="scorestyle">Losses:<span id="losses"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- style.cc -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

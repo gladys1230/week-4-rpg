@@ -1,0 +1,52 @@
+<!-- Kit Chan
+Coding Bootcamp UT-Austin
+Oct 2016
+Assignment week-4-rpg game -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="=utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <!--Simple bootstrap style for easier layout -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>CRYSTALS COLLECTOR!</title>
+</head>
+
+<body>
+    <container id="Container">
+        <h1> CRYSTALS COLLECTOR!</h1>
+        <div id="howToPlay">
+            <br>
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The Value of each crystal is hidden from you until you click on it.</p>
+            <p>Each tie when the game starts, the game will change the values of each crystal.</p>
+        </div>
+        <div id="WinLose"></div>
+        <div>
+            <h3> wins: <span id = "wins"></span></h3>
+            <h3> losses: <span id = "losses"></span></h3>
+            <h3 id="numberToGuess"></h3>
+            <div>
+                <h3>Your current score is: <span id="currentScore"></span></h3>
+                <h3>The number is: <span id="totalScore"></span></h3>
+            </div>
+        </div>
+        <div class="crystal">
+            <button id="button1"><img id="blueCrystal" class="makeImage" src="assets/images/stones/blue.jpg"></button>
+            <button id="button2"><img id="greenCrystal" class="makeImage" src="assets/images/stones/green.jpg"></button>
+            <button id="button3"><img id="orangeCrystal" class="makeImage" src="assets/images/stones/orange.jpg"></button>
+            <button id="button4"><img id="pinkCrystal" class="makeImage" src="assets/images/stones/pink.jpg"></button>
+        </div>
+    </container>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- style.cc -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

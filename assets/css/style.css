@@ -1,0 +1,31 @@
+/*-- Kit Chan
+Coding Bootcamp UT-Austin
+Oct 2016
+Assignment week-4-rpg game*/
+
+body {
+    background-image: url("../images/skulls.png") !important;
+}
+
+h1 {
+    width: 500px;
+    height: 70px;
+    margin: 10px;
+    border: solid black;
+    background-color: #c47768;
+}
+
+h3 {
+    margin: 10px;
+}
+
+p {
+    width: 85%;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.makeImage {
+    height: 100px;
+    width: 100px;
+}
